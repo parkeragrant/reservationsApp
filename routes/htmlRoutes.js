@@ -9,7 +9,7 @@ module.exports = function (app) {
         res.sendFile(path.join(__dirname, 'HTML/view.html'))
     })
     app.get("/make", function (req, res) {
-        res.sendFile(path.join(__dirname, 'HTML/view.html'))
+        res.sendFile(path.join(__dirname, 'HTML/make.html'))
     })
 }
 
