@@ -12,6 +12,11 @@ module.exports = function(app) {
             res.json(true);
         }
 
+        else{
+            waitListData.push(req.body);
+            res.json(false);
+        }
+
 
     });
 
