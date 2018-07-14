@@ -9,6 +9,9 @@ var path = require("path");
 var app = express();
 var PORT = process.env.PORT || 3000;
 
+
+var characters = [];
+
 require("./routes/apiRoutes")(app);
 require("./routes/htmlRoutes")(app);
 
