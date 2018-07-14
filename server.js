@@ -3,6 +3,7 @@
 var express = require('express');
 var bodyParser = require("body-parser");
 var path = require("path");
+var html = require('html');
 
 // Sets up the Express App
 // =============================================================
@@ -12,7 +13,7 @@ var PORT = process.env.PORT || 3000;
 
 var characters = [];
 
-require("./routes/apiRoutes")(app);
+// require("./routes/apiRoutes")(app);
 require("./routes/htmlRoutes")(app);
 
 // Starts the server to begin listening
