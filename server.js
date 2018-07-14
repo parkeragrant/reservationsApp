@@ -10,10 +10,7 @@ var html = require('html');
 var app = express();
 var PORT = process.env.PORT || 3000;
 
-
-var characters = [];
-
-// require("./routes/apiRoutes")(app);
+require("./routes/apiRoutes")(app);
 require("./routes/htmlRoutes")(app);
 
 // Starts the server to begin listening
